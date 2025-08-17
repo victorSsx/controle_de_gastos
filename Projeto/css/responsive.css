@@ -1,39 +1,83 @@
-@media (max-width: 750px){
-    body {
-        padding: 10px;
-    }
-    
-    .form {
-        flex-direction: column;
-    }
-    
-    input, select, button {
-        width: 100%;
-        margin-bottom: 10px;
-        padding: 15px;
-        font-size: 1em;
-        box-sizing: border-box;
-        border-radius: 10px;
-    }
-    
-    ul {
-        padding-left: 0;
-    }
-    
-    li {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px;
-        margin-bottom: 10px;
-        box-sizing: border-box;
-        width: 100%;
-        border-radius: 10px;
-        
-    }
-    
-    li span {
-        text-align: left;
-        width: 100%;
-        margin-bottom: 5px;
-    }
+@media (max-width: 750px) {
+  body {
+    padding: 10px;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  input,
+  select,
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 1em;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .form button:hover {
+    background-color: #31a536;
+    transform: scale(1.05);
+  }
+
+  input[type="number"] {
+    padding: 15px;
+    font-size: 1em;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  li span {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  li span.valor {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  li span.descricao {
+    font-size: 1em;
+    color: #666;
+  }
+  li button {
+    font-size: 0.9em;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+  }
+  li button:hover {
+    background-color: #ff1a1a;
+    transform: scale(1.05);
+  }
 }

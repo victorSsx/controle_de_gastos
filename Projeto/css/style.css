@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: #817f7ff5;
+  background: #d8d6d6f5;
   max-width: 500px;
   margin: auto;
   padding: 20px;
@@ -31,16 +31,29 @@ h2 span {
   margin-bottom: 20px;
 }
 
-input, select, button {
+input,
+select,
+button {
   padding: 10px;
   border: 1px solid #ccc;
 }
-
-button {
-  cursor: pointer;
-  background: #4caf50;
+.form button {
+  background-color: #4caf50;
   color: white;
   border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form button:hover {
+  background-color: #31a536;
+  transform: scale(1.05);
+}
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 ul {
@@ -68,7 +81,6 @@ li span {
   font-size: 1.2em;
   margin-right: 10px;
   text-align: center;
-
 }
 li button {
   background: #f44336;
