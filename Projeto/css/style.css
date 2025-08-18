@@ -1,15 +1,12 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #d8d6d6f5;
-  max-width: 500px;
-  margin: auto;
-  padding: 20px;
-}
+
 
 h1 {
   text-align: center;
   color: #333;
   margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 h2 {
   color: #333;
@@ -94,4 +91,25 @@ li button:hover {
   background: #d32f2f;
   transition: background 0.3s;
   color: white;
+}
+canvas {
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: #f9f9f9;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  transform: scale(1);
+  align-items: center;
+  color: #555;
+}
+canvas:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: #e0e0e0;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
